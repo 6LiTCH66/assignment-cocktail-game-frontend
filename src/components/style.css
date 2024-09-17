@@ -1,0 +1,8 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+    min-width: 450px!important;
+}
