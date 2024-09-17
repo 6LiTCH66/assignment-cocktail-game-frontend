@@ -51,7 +51,7 @@ export default function Home(){
     const startNewGame = async () => {
         setLoading(true)
         try {
-            const response = await fetch(`http://localhost:8080/api/cocktail/create`, {
+            const response = await fetch(`${apiUrl}/api/cocktail/create`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
