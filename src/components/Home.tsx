@@ -26,7 +26,9 @@ export default function Home(){
             return await response.json()
 
 
-        } catch (_) {
+
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        } catch (err) {
             setCocktails([]);
         }
     }
@@ -66,16 +68,12 @@ export default function Home(){
 
             return navigate(`game/${data.id}`, {state: data});
 
-        } catch (_) {
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        } catch (err) {
             setSuccess(false)
             return navigate("/");
         }
     }
-
-    const navigateToGame = (gameId: number) => {
-        return navigate(`/game/${gameId}`)
-    }
-
 
 
     return (
